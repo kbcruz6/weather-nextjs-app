@@ -40,12 +40,12 @@ const Search = () => {
         data-aos="fade-in"
         data-aos-duration="1000"
         data-aos-delay="300"
-        className="flex flex-col justify-center items-center align-middle h-screen"
+        className="flex flex-col justify-center items-center align-middle h-screen "
       >
         <div className="buscador relative flex justify-between items-center max-w-[400px] w-full m-auto pt-4 text-white z-50 px-4">
           <form
             onSubmit={fetchWeather}
-            className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-white text-white rounded-2xl"
+            className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-white text-white rounded-2xl hover:bg-white/20 duration-500 "
           >
             <div>
               <input
