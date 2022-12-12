@@ -40,7 +40,7 @@ const Search = () => {
         data-aos="fade-in"
         data-aos-duration="1000"
         data-aos-delay="300"
-        className="flex flex-col justify-center items-center align-middle h-screen "
+        className="flex flex-col justify-center items-center align-middle relative h-full"
       >
         <div className="buscador relative flex flex-col justify-between items-center max-w-[400px] w-full m-auto text-white z-50 px-4">
           {!weather.main && (

@@ -4,24 +4,21 @@ import Search from "../components/Search";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative h-screen p-5">
       <Head>
         <title>Weather - by KBcruz</title>
         <meta name="Weather app" content="Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/*//! Overlay  */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/25 -z-10 h-screen" />
-
+      {/* //! Overlay */}
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/25 -z-10" />
       {/*//! Background Image  */}
-      <Image
+      {/* <Image
         src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=903&q=80"
-        fill
-        className="object-cover -z-20 h-screen w-full"
+        className="object-cover -z-20"
         alt="bg"
-      />
-
+        fill
+      /> */}
       {/*//! Search & Weather  */}
       <Search />
     </div>
