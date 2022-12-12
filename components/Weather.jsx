@@ -10,7 +10,7 @@ const Weather = ({ data }) => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-delay="300"
-        className="text-6xl mb-10 text-center"
+        className="text-6xl mb-10 text-center "
       >
         {data.name}
       </p>
@@ -75,7 +75,7 @@ const Weather = ({ data }) => {
         data-aos="zoom-in"
         data-aos-duration="1500"
         data-aos-delay="1000"
-        className="bg-black/60 p-8 rounded-md "
+        className="bg-black/60 p-8 rounded-md shadow-lg shadow-[#040c16]"
       >
         {/*//! Content */}
         <div className="flex justify-between text-center">

@@ -27,7 +27,7 @@ const Search = () => {
         title: "Error! City not found",
         text: "Please enter a valid city",
         icon: "error",
-        confirmButtonText: ` <a href="/">Ok</a>`,
+        confirmButtonText: ` <a href="/">OK</a>`,
       });
     }
   }
@@ -40,7 +40,7 @@ const Search = () => {
         data-aos="fade-in"
         data-aos-duration="1000"
         data-aos-delay="300"
-        className="flex flex-col justify-center items-center align-middle h-screen mt-3"
+        className="flex flex-col justify-center items-center align-middle h-screen"
       >
         <div className="buscador relative flex justify-between items-center max-w-[400px] w-full m-auto pt-4 text-white z-50 px-4">
           <form
