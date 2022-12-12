@@ -10,7 +10,7 @@ const Weather = ({ data }) => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-delay="300"
-        className="text-6xl mb-10 text-center "
+        className="text-6xl mb-10 text-center font-bold"
       >
         {data.name}
       </p>
@@ -21,7 +21,7 @@ const Weather = ({ data }) => {
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="500"
-          className="flex flex-col items-center"
+          className="flex flex-col items-center font-bold"
         >
           <Image
             src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
@@ -36,14 +36,14 @@ const Weather = ({ data }) => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="600"
-          className="text-7xl"
+          className="text-7xl font-bold"
         >
           {data.main.temp.toFixed(0)}°C
         </p>
       </div>
 
       {/*//! MIN-MAX  */}
-      <div className=" mb-10 flex justify-between">
+      <div className=" mb-10 flex justify-between font-bold">
         {/*//! Min temp  */}
         <div>
           {" "}
@@ -53,9 +53,19 @@ const Weather = ({ data }) => {
             data-aos-delay="700"
             className="text-3xl"
           >
-            Min: {data.main.temp_min.toFixed(0)}°C
+            Min / Max:
           </p>
         </div>
+        {/* <div>
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            className="text-3xl"
+          >
+            -
+          </p>
+        </div> */}
         {/*//! Max temp  */}
         <div>
           {" "}
@@ -65,7 +75,8 @@ const Weather = ({ data }) => {
             data-aos-delay="800"
             className="text-3xl"
           >
-            Max: {data.main.temp_max.toFixed(0)}°C
+            {data.main.temp_min.toFixed(0)}°C /{data.main.temp_max.toFixed(0)}
+            °C
           </p>
         </div>
       </div>
@@ -75,7 +86,7 @@ const Weather = ({ data }) => {
         data-aos="zoom-in"
         data-aos-duration="1500"
         data-aos-delay="1000"
-        className="bg-black/60 p-8 rounded-md shadow-lg shadow-[#040c16]"
+        className="bg-black/60 p-8 rounded-md shadow-lg shadow-black"
       >
         {/*//! Content */}
         <div className="flex justify-between text-center">
