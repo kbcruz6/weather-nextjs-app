@@ -7,9 +7,9 @@ const Weather = ({ data }) => {
     <div className="flex flex-col justify-between max-w-[400px] w-full m-auto p-4 text-white z-10">
       {/*//! Title */}
       <p
-        // data-aos="fade-left"
-        // data-aos-duration="1000"
-        // data-aos-delay="300"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300"
         className="text-6xl mb-10 text-center font-bold text-shadow"
       >
         {data.name}
@@ -18,24 +18,25 @@ const Weather = ({ data }) => {
       {/*//! Right now weather  */}
       <div className=" mb-10 flex justify-between items-center">
         <div
-          // data-aos="fade-right"
-          // data-aos-duration="1000"
-          // data-aos-delay="500"
-          className="flex flex-col items-center font-bold bg-white/30 rounded-2xl shadow-lg shadow-black p-4 "
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          className="bg-white/30 rounded-2xl flex flex-col items-center font-bold text-shadow p-4 "
         >
           <Image
             src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
             alt="/"
             width={80}
             height={80}
+            className=""
           />
           <p className="text-2xl ">{data.weather[0].main}</p>
         </div>
 
         <p
-          // data-aos="fade-left"
-          // data-aos-duration="1000"
-          // data-aos-delay="600"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="600"
           className="text-7xl font-bold text-shadow"
         >
           {data.main.temp.toFixed(0)}°C
