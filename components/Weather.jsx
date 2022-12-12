@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Weather = ({ data }) => {
-  // console.log(data);
+  console.log(data);
   return (
     <div className="flex flex-col justify-between max-w-[400px] w-full m-auto p-4 text-white z-10">
       {/*//! Title */}
@@ -16,12 +16,12 @@ const Weather = ({ data }) => {
       </p>
 
       {/*//! Right now weather  */}
-      <div className=" mb-10 flex justify-between items-center">
+      <div className=" mb-10 flex justify-between items-center ">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="500"
-          className="bg-white/30 rounded-2xl flex flex-col items-center font-bold text-shadow p-4 "
+          className="bg-white/30 rounded-2xl flex flex-col items-center font-bold text-shadow p-4 shadow-lg shadow-black"
         >
           <Image
             src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
