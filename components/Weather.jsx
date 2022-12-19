@@ -11,7 +11,7 @@ const Weather = ({ data }) => {
       className="relative flex flex-col justify-between max-w-[400px] w-full m-auto p-4 text-white z-10 "
     >
       {/*//! Title */}
-      <p className="text-5xl mt-3 mb-2 text-center font-bold text-shadow">
+      <p className="text-5xl mb-2 text-center font-bold text-shadow">
         {/* {data.name} */}
         {data.location.name}
       </p>
