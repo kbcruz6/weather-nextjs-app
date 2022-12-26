@@ -12,7 +12,7 @@ const Weather = ({ data }) => {
     >
       {/*//! Title */}
       <p className="text-5xl mb-10 text-center font-bold text-shadow">
-        {data.name},{data.sys.country}
+        {data.name}, {data.sys.country}
         {/* {data.location.name} */}
       </p>
       {/* <p className="text-md mb-5 text-center font-bold text-shadow">
