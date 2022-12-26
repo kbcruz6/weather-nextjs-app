@@ -9,8 +9,8 @@ const Search = () => {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(false);
-  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
-  const url = `https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_KEY}&q=${city}&aqi=no`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY1}`;
+  // const url = `https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_KEY}&q=${city}&aqi=no`;
 
   //! API FETCH
   async function fetchWeather(e) {
@@ -45,16 +45,16 @@ const Search = () => {
         className="flex flex-col justify-center items-center align-middle relative h-full"
       >
         <div className="buscador relative flex flex-col justify-between items-center max-w-[400px] w-full m-auto text-white z-50 px-4">
-          {/* {!weather.main && (
-            <h1 className="relative flex text-4xl my-5 text-shadow text-white font-bold">
-              Weather Forecast
-            </h1>
-          )} */}
-          {!weather.location && (
+          {!weather.main && (
             <h1 className="relative flex text-4xl my-5 text-shadow text-white font-bold">
               Weather Forecast
             </h1>
           )}
+          {/* {!weather.location && (
+            <h1 className="relative flex text-4xl my-5 text-shadow text-white font-bold">
+              Weather Forecast
+            </h1>
+          )} */}
           <form
             onSubmit={fetchWeather}
             className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-white text-white rounded-2xl hover:bg-white/20 duration-500 "
@@ -73,7 +73,8 @@ const Search = () => {
             </button>
           </form>
         </div>
-        {weather.location && <Weather data={weather} />}
+        {weather.main && <Weather data={weather} />}
+        {/* {weather.location && <Weather data={weather} />} */}
       </div>
     );
   }
