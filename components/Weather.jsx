@@ -12,7 +12,7 @@ const Weather = ({ data }) => {
     >
       {/*//! Title */}
       <p className="text-5xl mb-10 text-center font-bold text-shadow">
-        {data.name}, {data.sys.country}
+        {data.name},{data.sys.country}
         {/* {data.location.name} */}
       </p>
       {/* <p className="text-md mb-5 text-center font-bold text-shadow">
@@ -25,7 +25,7 @@ const Weather = ({ data }) => {
         {/* bg-white/30 shadow-md shadow-black*/}
         <div className=" rounded-2xl flex flex-col items-center font-bold text-shadow bg-white/30 shadow-md shadow-black px-3 py-1">
           <Image
-            src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+            src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
             // src={`http:${data.current.condition.icon}`}
             alt="/"
             width={80}
@@ -42,20 +42,20 @@ const Weather = ({ data }) => {
       </div>
 
       {/*//! MIN-MAX  */}
-      <div className=" mb-10 flex justify-around font-bold text-shadow">
-        {/*//! Min  */}
-        <div>
+      {/* <div className=" mb-10 flex justify-around font-bold text-shadow"> */}
+      {/*//! Min  */}
+      {/* <div>
           <p className="text-2xl">Min: {data.main.temp_min.toFixed(0)}°C</p>
-        </div>
+        </div> */}
 
-        {/*//! Max  */}
-        <div>
+      {/*//! Max  */}
+      {/* <div>
           <p className="text-2xl">
             Max: {data.main.temp_max.toFixed(0)}
             °C
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/*//! Container w/Overlay  */}
       {/* bg-black/60 p-8 rounded-2xl shadow-lg shadow-black */}
