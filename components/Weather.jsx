@@ -35,27 +35,27 @@ const Weather = ({ data }) => {
           <p className="text-2xl ">{data.weather[0].main}</p>
           {/* <p className="text-xl text-center">{data.current.condition.text}</p> */}
         </div>
-        <p className="text-6xl font-bold text-shadow">
+        <p className="text-7xl font-bold text-shadow">
           {data.main.temp.toFixed(0)}°C
           {/* {data.current.temp_c.toFixed(0)}°C */}
         </p>
       </div>
 
       {/*//! MIN-MAX  */}
-      {/* <div className=" mb-10 flex justify-between font-bold text-shadow"> */}
-      {/*//! Min  */}
-      {/* <div>
-          <p className="text-3xl">Min: {data.main.temp_min.toFixed(0)}°C</p>
-        </div> */}
+      <div className=" mb-10 flex justify-around font-bold text-shadow">
+        {/*//! Min  */}
+        <div>
+          <p className="text-2xl">Min: {data.main.temp_min.toFixed(0)}°C</p>
+        </div>
 
-      {/*//! Max  */}
-      {/* <div>
-          <p className="text-3xl">
+        {/*//! Max  */}
+        <div>
+          <p className="text-2xl">
             Max: {data.main.temp_max.toFixed(0)}
             °C
           </p>
         </div>
-      </div> */}
+      </div>
 
       {/*//! Container w/Overlay  */}
       {/* bg-black/60 p-8 rounded-2xl shadow-lg shadow-black */}
